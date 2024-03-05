@@ -1,0 +1,17 @@
+/* .section {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+  /* } */
+   */
+  h6 {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  /* hr {
+    flex-grow: 12;
+    border: none;
+    border-top: 1px solid #000;
+  } */
+  

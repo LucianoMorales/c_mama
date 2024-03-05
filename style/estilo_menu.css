@@ -1,0 +1,134 @@
+* {
+
+ box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+} 
+.contenedor {
+  display: flex;
+  
+
+  width: 100%;
+}
+
+
+
+/* ************************MENU LATERAL  **************/
+.menu {
+  height: 100%;
+  width: 20%;
+
+  /* background-color: #36562F; */
+background: #2F3E4F;
+
+  padding: 10px;
+z-index: 2;
+  padding: 0;
+  position: fixed;
+
+}
+
+#class:hover{
+  /* background: red; */
+}
+
+.menu ul {
+  list-style: none;
+  text-decoration: none;
+
+  padding: 0;
+  width: 100%;
+
+}
+
+.menu a {
+  text-align: right;
+  display: block;
+  padding: 10px;
+
+  text-decoration: none;
+  font-size: 18px;
+ 
+}
+
+.buton_seccion {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+/* color; */
+  border: none;
+  margin-top: 0.2em;
+  margin-left: 0;
+  flex-grow: 1;
+}
+
+
+/* *********ICONOS DEL MENU LATERAL****** */
+.parte1_icono {
+  display: inline-block;
+  text-align: right;
+  color: white;
+  flex-grow: 1;
+  margin-right: 8%;
+}
+/* *******TEXTO ALADO DEL ICONO DEL MENU LATERAL******* */
+.parte2_texto {
+
+  display: inline-block;
+  width: 75%;
+  font-family: 'Bona Nova', serif;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+}
+
+/* ************************** */
+
+
+#lista:hover{
+  width: 100%;
+  background-color: cadetblue;
+}
+/* ***************** */
+
+
+#conf:hover{
+  color: aquamarine;
+}
+.content {
+  flex: 5;
+  padding: 10px;
+
+}
+
+#img{
+margin-top: 2em;
+  margin-bottom: 3em;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .menu {
+    width: 100%;
+    /* float: right; */
+
+  }
+  /* .menu ul{
+    margin-left:22vw;
+  } */
+  
+  .content {
+    width: 100%;
+   
+  }
+  .bi-house-door{
+    display: none;
+  }
+
+
+ 
+  
+}

@@ -1,0 +1,281 @@
+
+.form-control:focus {
+/* Cambia el color del borde al seleccionar el input */
+    /* Elimina el borde azul que aparece por defecto al seleccionar el input */
+  outline: none;
+  
+  box-shadow: 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(255, 105, 180, 0.5);
+
+} 
+
+body{
+
+  background: #EAEBF4;
+}
+#preb{
+  justify-content: center;
+  text-align: center;
+
+}
+#contenedor_img_marcador{
+  width:  67%;
+  margin-right: 2rem;
+
+}
+#titulo{
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave con un desplazamiento vertical de 5 píxeles y un desenfoque de 10 píxeles */
+    
+}
+#cuerpo{
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); 
+}
+#cuerpo_2{
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); 
+}
+.menu-responsive-vertical{
+    display: none;
+}
+
+#cuerpo_{
+    width: 500px;
+    height: auto;
+  }
+  /* Estilos para el marcador */
+  .marcador {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+@media(min-width: 0px) and  (max-width: 768px) {
+    /* Estilos para pantallas con un ancho máximo de 768px */
+ 
+    #menu-container{
+        position: absolute;
+        left:0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    
+      
+    }
+    .menu{
+        display: none;
+    }
+    
+      .menuu{
+   display: none;
+    }
+    .menu-verticall{
+        display: none;
+    }
+    .menu-navbar{
+        background:    #36562F;
+    }
+    .menu-responsive-vertical{
+        display: block;
+        
+    }
+    #configuracion{
+     display: none;
+    }
+    #boton-configuracion{
+        display: none;
+    }
+    #boton-configuracion-responsivo{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    #menu-extra {
+        text-align: left;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        padding: 3% 5%;
+        border-radius: 5px;
+        font-size: 18px;
+   
+      }
+      
+      #menu-extra:active {
+        
+      }
+      #linea{
+        border: none;
+        height: 1px;
+        background-color:darkgreen;
+        box-shadow: 0 1px 2px rgba(218, 14, 14, 0.4);
+        color: #36562F;
+      }
+    
+      #cme{
+
+        height: 25%;
+        width: 100%;
+        text-align: center;
+        
+        padding-top: 15%;
+        padding-bottom: 1%;
+            }
+            #modificar, #eliminar{
+                display: inline-block;
+                 width: 30%;
+                 height: 4.5em;
+        
+        
+        
+        
+            }
+            #modificar{
+                background: rgb(206,232,24);
+                background: linear-gradient(90deg, rgba(206,232,24,1) 1%, rgba(198,156,26,1) 64%);
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            } 
+            #eliminar{
+                background: rgb(124,52,52);
+                background: linear-gradient(90deg, rgba(124,52,52,1) 0%, rgba(153,42,42,1) 26%, rgba(198,26,26,1) 91%);
+        color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+        
+            #info_paciente{ 
+                text-decoration: none;
+                color: white;
+                align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        font-size: 23px;   
+        }
+      
+  }
+
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #menu-container{
+        width: 76%;
+        left: 12%;
+        position: relative;
+        z-index: 2;
+      
+      }
+      .menuu{
+       
+        position:fixed;
+        margin-top: 2rem;
+        z-index: 5;
+    }
+ 
+    .menu-vertical-principal{
+        display: none;
+    }
+    #cme{
+
+      height: 20%;
+      width: 100%;
+      text-align: center;
+      
+      padding-top: 5%;
+      padding-bottom: 1%;
+          }
+          #modificar, #eliminar{
+              display: inline-block;
+               width: 30%;
+               height: 3em;
+
+      
+      
+      
+          }
+          #modificar{
+              background: rgb(206,232,24);
+              background: linear-gradient(90deg, rgba(206,232,24,1) 1%, rgba(198,156,26,1) 64%);
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+              
+          } 
+          #eliminar{
+              background: rgb(124,52,52);
+              background: linear-gradient(90deg, rgba(124,52,52,1) 0%, rgba(153,42,42,1) 26%, rgba(198,26,26,1) 91%);
+      color: white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          }
+      
+          #info_paciente{ 
+              text-decoration: none;
+              color: white;
+              align-items: center; /* Centrar verticalmente */
+      justify-content: center; /* Centrar horizontalmente */
+      font-size: 23px;   
+      }
+   
+
+
+  }
+  
+  @media (min-width: 1025px) {
+    #menu-container{
+    
+        background: white;
+      }
+      .menuu{
+      background: black;
+        position:fixed;
+      
+        z-index: 5;
+    }
+ 
+    .menu-vertical-principal{
+      padding-left: 12rem;
+      padding-top: 0.2rem;
+      color: white;
+    }
+    #configuracion{
+        color: wheat;
+    }
+
+    #boton-configuracion{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    #cme{
+
+height: 20%;
+width: 100%;
+text-align: center;
+
+padding-top: 5%;
+padding-bottom: 1%;
+    }
+    #modificar, #eliminar{
+        display: inline-block;
+         width: 30%;
+         height: 3em;
+
+
+
+
+    }
+    #modificar{
+        background: rgb(206,232,24);
+        background: linear-gradient(90deg, rgba(206,232,24,1) 1%, rgba(198,156,26,1) 64%);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    } 
+    #eliminar{
+        background: rgb(124,52,52);
+        background: linear-gradient(90deg, rgba(124,52,52,1) 0%, rgba(153,42,42,1) 26%, rgba(198,26,26,1) 91%);
+color: white;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #info_paciente{ 
+        text-decoration: none;
+        color: white;
+        align-items: center; /* Centrar verticalmente */
+justify-content: center; /* Centrar horizontalmente */
+font-size: 23px;   
+}
+  }
